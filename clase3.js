@@ -52,8 +52,8 @@ calcular(1,saludar())
 
 
 /************/
-function ingresarAlBoliche (edadMinima){
-    if (edadMinima >= 18){
+function ingresarAlBoliche(edadMinima) {
+    if (edadMinima >= 18) {
         return "Puede pasar"
     }
     return "No puede pasar"
@@ -63,37 +63,64 @@ console.log(ingresarAlBoliche(17))
 console.log(ingresarAlBoliche("Esteban"))
 
 /********************* */
-function puedeCruzar(colorSemaforo){
-    if (colorSemaforo === "rojo"){
+function puedeCruzar(colorSemaforo) {
+    if (colorSemaforo === "rojo") {
         return "no puede cruzar"
-    }else{
+    } else {
         return "puede cruzar"
     }
 }
 
 /************************ */
-function IMC (peso,altura){
-    let resultado = peso / altura**2
-    if( resultado < 18.5){
-        return "Debado del peso"
-    } else if (resultado < 25){
+function IMC(peso, altura) {
+    let resultado = peso / altura ** 2
+    if (resultado < 18.5) {
+        return "Debajo del peso"
+    } else if (resultado < 25) {
         return "Normal"
-    }else if (resultado < 30){
+    } else if (resultado < 30) {
         return "Sobrepeso"
-    }else{
+    } else {
         return "Obesidad"
     }
 }
 
-console.log(IMC(94,1.78))
-console.log(IMC(78,1.80))
-console.log(IMC(73,1.70))
+console.log(IMC(94, 1.78))
+console.log(IMC(78, 1.80))
+console.log(IMC(73, 1.70))
 
 // if ternario
-function saldoSuficiente (saldo){
-    let resultado = saldo> 650 ? "Buen viaje":"Saldo insuficiente"
+function saldoSuficiente(saldo) {
+    let resultado = saldo > 650 ? "Buen viaje" : "Saldo insuficiente"
     return resultado
 }
 
 console.log(saldoSuficiente(700))
 console.log(saldoSuficiente(300))
+/***********************/
+// AND
+console.log("perro" && "gato")
+// OR
+console.log("perro" || "gato")
+// Montaña rusa
+// Medir como minimo 1.80, si no mide 1.80 tiene que venir acompañado 
+function puedeIngresar(altura, acompaniado) {
+    if (altura > 1.80) {
+        return "Puede pasar"
+    } else if (acompaniado === "si") {
+        return "Puede pasar"
+    } else {
+        return "no puede pasar"
+    }
+}
+
+function puedeIngresar2(altura, acompaniado) {
+    if (altura > 1.80 || acompaniado === "si") {
+        return "Puede pasar"
+    } else {
+        return "No puede pasar"
+    }
+}
+
+
+
