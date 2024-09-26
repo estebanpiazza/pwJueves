@@ -1,0 +1,78 @@
+<!-- HTML parte 2 / <ul>, <ol>, <li>, <a>, <table>, <tr>, <td>, <th>, <form>, <label>, <textarea>, <button>, <select>, <option>, removeAttribute, -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+/*         * {
+            border: 1px solid red;
+        } */
+
+        /*             ol{text-align: right;}
+            li{display: inline;} */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol type="a" start="10"> <!-- lista con criterio de orden (ordered list) -->
+        <li>Esteban</li><!-- list item -->
+        <li>Esteban</li>
+        <li>Esteban</li>
+        <li>Esteban</li>
+        <li>Esteban</li>
+    </ol>
+    <ul type="square"> <!-- lista sin criterio de orden (unordered list) -->
+        <a href="">
+            <li>Ir a</li>
+        </a>
+        <li>Piazza</li>
+        <li>Piazza</li>
+        <li>Piazza</li>
+        <li>Piazza</li>
+        <li>Piazza</li>
+    </ul>
+    <!-- <nav></nav><menu></menu> -->
+
+    <table>
+        <tr><th>Encabezado 1</th><th>Otra columna</th><th>Otrrro table hedaer</th></tr><!-- table row -->
+        <tr><td> Dato normal</td><td></td><td>otra cosa</td></tr><!-- segunda fila -->
+        <tr><td>a</td>
+        <td>b</td>
+        <td>c</td></tr>
+    </table>
+<hr>
+<h1>Formulario de contacto</h1>
+    <form action="" method="">
+        <label for="nombreUsuario">Nombre del usuario</label>
+        <input type="text" name="nombreUsuario" id="" placeholder="Ingrese su nombre">
+        <label for="contrasenia">Escriba su contraseña</label>
+        <input type="password" name="contrasenia" id="">
+        <!-- <input type="submit" value="No me toques"> -->
+         <textarea name="" id=""></textarea>
+         <input type="button" value="Soy un boton tipo input" onclick="saludar()">
+         <button>Soy un boton</button>
+    </form>
+    <hr>
+    <details>
+        <summary>Spoilers de Game of Thrones</summary>
+        Hodor es Hold The Door resumido
+    </details>
+    <select name="" id="">Elija su pais
+        <option value="">Argentina</option>
+        <option value="">Peru</option>
+        <option value="">Chile</option>
+        <option value="">Paraguay</option>
+        <option value="">Uruguay</option>
+    </select>
+
+
+</body>
+<script>
+    function saludar(){
+        alert("hola mundo")
+    }
+</script>
+</html>
