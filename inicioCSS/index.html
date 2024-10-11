@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar con CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <style>/* css internal*/
+        body{background-color: aqua;}
+        .listaCosas{color:white}
+    </style>
+</head>
+<body>
+    <h1 style="color:red">Este es el header</h1>
+    <h1 id="hInline">Este es un header inline</h1>
+    <h1 id="hInline">Este es un header inline</h1>
+    <!-- CSS INLINE, especificidad -->
+   <p id="parrafoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, corporis. Ea expedita nobis iure impedit quam minus iusto illum. Illo, laboriosam labore repellat mollitia deleniti nihil possimus ut quasi! Ratione.</p>
+    <!-- Cascade StyleSheet -->
+     <ul>
+        <li class="listaCosas">cosa variada</li>
+        <li class="listaCosas">cosa variada</li>
+        <li class="listaCosas">cosa variada</li>
+        <li class="listaCosas">cosa variada</li>
+        <li class="listaCosas" id="ultimoitem">cosa variada</li>
+     </ul>
+     <img src="https://placehold.co/100x100" alt="" id="imagenBloque">
+     <img src="https://placehold.co/100x100" alt="">
+     <img src="https://placehold.co/100x100" alt="">
+     <div>
+  
+     </div>
+     <div class="container">
+        <div class="header">hearder</div>
+        <div class="footer">footyer</div>
+        <div class="col-izq-1">col-izq-1</div>
+        <div class="col-der-1">col-der-1</div>
+        <div class="col-izq-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat pariatur earum aliquam blanditiis enim ut cupiditate molestias architecto explicabo tempora ipsam autem at eveniet eius, fugit hic possimus. Sapiente?</div>
+        <div class="col-der-2">      <img src="https://placehold.co/100x100" alt="" id="imagenAbsoluta">col-der-2</div>
+      </div>
+</body>
+</html>
