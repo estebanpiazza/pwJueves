@@ -1,0 +1,113 @@
+/* hecho: colores,boxmoel,diplay,medidas,position,fuentes,
+/* selector { propiedad:valor;*infinto}
+*/
+* {
+    border: 1px solid red;
+}
+
+/* selectores */
+
+/*tag*/
+h1 {
+    color: rgb(132, 84, 2);
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+/*id #*/
+#parrafoPrincipal {
+    color: darkred;
+    border: 1px solid black;
+}
+
+#ultimoitem {
+    color: blue;
+    margin: 50px 25px 10px 5px;
+    /* clockwise */
+}
+
+/* class .*/
+.listaCosas {
+    color: fuchsia;
+    border: 2px dotted green;
+    padding: 20px;
+    margin: 10px;
+}
+
+.listaCosas {
+    color: #602CF5
+}
+
+/* inline y block */
+/* las block ocupan el 100% del ancho*/
+/*las inline solo el ancho del contenido */
+
+#hInline {
+    display: inline;
+    font-size: 10px;
+    font-family: "Brsh Script MT","Tmes new roman", monospace;
+}
+
+#imagenBloque {
+    display: block;
+/*     position: relative;
+    left: 40px;
+    bottom: 50px */
+}
+
+#imagenAbsoluta {
+/*     position: absolute;
+    left: 100px; */
+}
+
+/*
+CSS: Queries y pseudoselectores, flexbox, grid
+ */
+
+
+@media screen and (min-width:300px) {
+    body{
+        background-color: red;
+    }
+    h1 {
+        color: blue;
+        font-family: Arial;
+    }
+
+    
+}
+@media screen and (min-width:600px) {
+    body{
+        background-color: tan;
+    }
+    h1 {
+        color: blue;
+        font-family: Arial;
+    }
+
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "col-izq-1 col-der-1"
+      "col-izq-2 col-der-2"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .footer { grid-area: footer; }
+  
+  .col-izq-1 { grid-area: col-izq-1; }
+  
+  .col-der-1 { grid-area: col-der-1; }
+  
+  .col-izq-2 { grid-area: col-izq-2; }
+  
+  .col-der-2 { grid-area: col-der-2; }
+  
