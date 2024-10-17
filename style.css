@@ -1,0 +1,72 @@
+
+body{
+    background-color: #7D75FF;
+    margin: 0;
+}
+
+/*  
+CSS: colores, box model,medidas,
+ */
+
+/* 
+etiqueta nombreDelTag
+class   
+id
+*/
+
+
+
+#listaSaludos{
+    text-align: center;
+    
+}
+
+
+.saludosPersonas{
+    color: white;
+    display: inline;
+}
+
+
+.subrayado{
+    text-decoration: underline;
+
+}
+
+
+
+/* fuentes, position,  display  */
+
+/* Serif : Times New Roman, 
+Sans-serif: Arial, Verdana
+Monospace: Roboto
+Cursive: Lucida Handwriting
+Fantasy: comic sans
+ */
+
+ #encabezado{
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+#encabezado2{
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    text-align: center;
+
+}
+
+.imagenTorta{
+    text-align: center;
+}
+
+#contenedorImagen{
+    text-align: center;
+}
